@@ -13,7 +13,7 @@ export const generateToken = (userId, res) => {
         httpOnly: true,
         maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
         sameSite: "none",
-        secure: process.env.NODE_ENV !== "development",
+        secure: true,
     });
     return jwt_Token;
 };
