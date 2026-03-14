@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://chat-app-frontend-beta-beryl.vercel.app/"
+    "https://chat-app-frontend-beta-beryl.vercel.app"
   ],
   credentials: true,
   methods: ["GET", "POST", "DELETE", "PUT"]
