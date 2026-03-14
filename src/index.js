@@ -16,7 +16,8 @@ app.use(cookieParser());
 
 // Enable CORS for any device (any origin)
 app.use(cors({
-  origin: "http://localhost:5173", // Allow requests from any origin/device
+  // origin: "http://localhost:5173", // Allow requests from any origin/device for localhost
+  origin: "https://chat-app-frontend-beta-beryl.vercel.app/", // for production url
   credentials: true ,
   methods: ["GET", "POST", "DELETE", "PUT"]
 }));
